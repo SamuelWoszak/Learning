@@ -8,6 +8,6 @@ Projects and stuffs I did for learning purposes
 * [Mundo 2](https://www.cursoemvideo.com/curso/python-3-mundo-2/)
 * [Mundo 3](https://www.cursoemvideo.com/curso/python-3-mundo-3/)
 
-### [Leet Code](https://leetcode.com/) - Site to solve some challenges in programming to become a better programmer
+### [LeetCode Challenges](https://leetcode.com/) - Site to solve some challenges in programming to become a better programmer
 
 ### [App-Ideas](https://github.com/florinpop17/app-ideas) - Github repositorie to share ideas in many languages
