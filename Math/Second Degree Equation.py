@@ -9,22 +9,22 @@ class EquationSecondDegree:
       if math.sqrt(delta) == int(math.sqrt(delta)):
         if (-b + math.sqrt(delta)) % 2 == 0: #simplify by 2
           if ((-b + math.sqrt(delta))//2) % a == 0 and ((-b - math.sqrt(delta))// 2) % a == 0: #simplify by a because they r multiply 
-              x1 = (-b + math.sqrt(delta))/(2 * a)
-              x2 = (-b - math.sqrt(delta))/(2 * a) 
+              x1 = (-b + math.sqrt(delta))/(2 * a) #show int root 1
+              x2 = (-b - math.sqrt(delta))/(2 * a) #show int root 2
           else:
-            x1 = f'{(-b + math.sqrt(delta))/(2)}/{a}'
-            x2 = f'{(-b+ math.sqrt(delta))/2}/{a}'
+            x1 = f'{(-b + math.sqrt(delta))/(2)}/{a}' #show root in a denominator
+            x2 = f'{(-b+ math.sqrt(delta))/2}/{a}' #show root in a denominator
         else:
-          if (-b + math.sqrt(delta))/a == 0 and (-b - math.sqrt(delta)) % a == 0:
-            x1 = f'{(-b + math.sqrt(delta))/a}/2'
-            x2 = f'{(-b - math.sqrt(delta))/a}/2'
+          if (-b + math.sqrt(delta))/a == 0 and (-b - math.sqrt(delta)) % a == 0: #check if they odd divisible by a
+            x1 = f'{(-b + math.sqrt(delta))/a}/2' #show root in 2 denominator
+            x2 = f'{(-b - math.sqrt(delta))/a}/2' #show root in 2 denominator
           else:
-            x1 = f'{(-b + math.sqrt(delta))}/{2 * a}'
-            x2 = f'{(-b - math.sqrt(delta))/a}/{2 * a}'
+            x1 = f'{(-b + math.sqrt(delta))}/{2 * a}' #show root in 2a denominator
+            x2 = f'{(-b - math.sqrt(delta))/a}/{2 * a}' #show root in 2a denominator
       else:
-        x1 = f'({-b} + √{delta})/{2 * a}'
-        x2 = f'({-b}) - √{delta}/{2 * a}'
-      print(f'As raízes são {x1} e {x2}!')
+        x1 = f'({-b} + √{delta})/{2 * a}' #show root in 2a denominator and not exact root
+        x2 = f'({-b}) - √{delta}/{2 * a}' #show root in 2a denominator and not exact root
+      print(f'The roots are real and they are {x1} and {x2}!') #show roots
     elif delta == 0: #if there's a discriminant = 0 so x1 = x2
       if b % 2 == 0: #if b is pair simplify the frac
         if (b // 2) % a == 0: #if b is multiply of a so simplify
@@ -36,7 +36,7 @@ class EquationSecondDegree:
             x1 = f'{-b/a}/2' #simplify b with a and stay b/2 bc b/2 isnt int
           else:
             x1 = f'{-b}/{2 * a}' #if b isnt multiply of a and 2 in same time so stay in frac mode
-      print(f'Sua raíz é de multiplicidade dois e ambas valem {x1}!') #return the value of the "root" (its two roots, i know, they r just the same.)
+      print(f'Your roots have multiplicity and they are equal {x1}!') #return the value of the "root" (its two roots, i know, they r just the same.)
         #done
     else:
       z = complex(b, delta)
@@ -75,6 +75,6 @@ class EquationSecondDegree:
             x1 = f'(-{z.real} + i{math.sqrt(abs(z.imag))})/{2 * a}' #they are not  divisible by a and 2 and exact root
             x2 = f'(-{z.real} - i{math.sqrt(abs(z.imag))})/{2 * a}' #they are not  divisible by a and 2 and exact root
             print('7')
-      print(f'As suas raízes são {x1} e {x2}!')
+      print(f'Your roots are complex and they are {x1} and {x2}!')
 equationseconddegree = EquationSecondDegree()
-equationseconddegree.SolveEquation(3, 4, 2)
+equationseconddegree.SolveEquation(a, b, c)
