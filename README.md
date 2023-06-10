@@ -11,3 +11,5 @@ Projects and stuffs I did for learning purposes
 ### [LeetCode Challenges](https://leetcode.com/) - Site to solve some challenges in programming to become a better programmer
 
 ### [App-Ideas](https://github.com/florinpop17/app-ideas) - Github repositorie to share ideas in many languages
+
+### [Frontend Mentor](https://www.frontendmentor.io/) - Site to get better in Frontend skills 
