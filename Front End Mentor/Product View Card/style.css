@@ -104,6 +104,9 @@ main{
   border: none;
   cursor: pointer;
 }
+.button button:hover{
+  background-color: var(--hover-components-color);
+}
 .button img{
   margin-right: 10px;
 }
